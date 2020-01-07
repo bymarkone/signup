@@ -16,6 +16,7 @@
     "start": "PORT=3002 react-app-rewired start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test-ci": "react-script test --watchAll=false",
     "eject": "react-scripts eject"
   },
   "config-overrides-path": "node_modules/react-app-rewire-micro-frontends",
