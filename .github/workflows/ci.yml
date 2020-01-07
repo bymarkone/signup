@@ -28,8 +28,9 @@ jobs:
     needs: [build]
     steps: 
     - uses: actions/checkout@v1
-    - name: npm install, build, and test
+    - name: npm install and build
       run: |
+        npm ci
         npm run build
     - uses: jakejarvis/s3-sync-action@master
       with:
